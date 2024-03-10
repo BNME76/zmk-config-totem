@@ -5,9 +5,7 @@
  */
 
 #include "BNME.dtsi"
-&default_transform {
-    col-offset = <7>;
-};
+
 &kscan0 {
     col-gpios
         = <&pro_micro 20 GPIO_ACTIVE_HIGH>
