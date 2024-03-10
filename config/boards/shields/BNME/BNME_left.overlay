@@ -3,10 +3,11 @@
  *
  * SPDX-License-Identifier: MIT
  */
+
+#include "BNME.dtsi"
 &default_transform {
     col-offset = <7>;
 };
-#include "BNME.dtsi"
 &kscan0 {
     col-gpios
         = <&pro_micro 20 GPIO_ACTIVE_HIGH>
