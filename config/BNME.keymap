@@ -27,15 +27,5 @@
                              &kp N5     &kp N5     &kp N                    &kp COMMA  &kp DOT    &kp FSLH
             >;
         };
-
-        layer_1 {
-            bindings = <
-&kp Q   &kp A   &kp T   &kp G   &kp D   &kp N0                  &kp N0  &kp H   &kp E   &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
     };
 };
