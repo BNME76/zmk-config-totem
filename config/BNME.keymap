@@ -28,8 +28,6 @@
 &kp LCTRL  &kp Z   &kp X     &kp C      &kp V      &kp B   &kp LGUI  &kp B   &kp N   &kp M      &kp COMMA  &kp DOT    &kp SEMI   &kp SQT
                    &kp LALT  &kp SPACE  &kp ENTER                                    &kp ENTER  &kp SPACE  &kp RALT
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_1 {
