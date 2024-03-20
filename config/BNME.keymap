@@ -22,11 +22,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&mt ESC TILDE  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5  &kp N6         &kp N7  &kp N8  &kp N9     &kp N0     &kp MINUS  &kp EQUAL  &kp FSLH
-&kp TAB        &kp Q   &kp W     &kp E      &kp R      &kp T   &trans         &trans  &kp Y   &kp U      &kp I      &kp O      &kp P      &kp BSLH
-&kp LSHFT      &kp A   &kp S     &kp D      &kp F      &kp G   &trans         &mo 1   &kp H   &kp J      &kp K      &kp L      &kp LBKT   &kp RBKT
-&kp LCTRL      &kp Z   &kp X     &kp C      &kp V      &kp B   &kp BACKSPACE  &kp B   &kp N   &kp M      &kp COMMA  &kp DOT    &kp SEMI   &kp SQT
-                       &kp LALT  &kp SPACE  &kp ENTER                                         &kp ENTER  &kp SPACE  &kp RALT
+&mt ESC TILDE  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5  &kp N6         &kp N7  &kp N8  &kp N9     &kp N0     &kp MINUS         &kp EQUAL  &kp FSLH
+&kp TAB        &kp Q   &kp W     &kp E      &kp R      &kp T   &trans         &trans  &kp Y   &kp U      &kp I      &kp O             &kp P      &kp BSLH
+&kp LSHFT      &kp A   &kp S     &kp D      &kp F      &kp G   &kp DEL        &mo 1   &kp H   &kp J      &kp K      &kp L             &kp LBKT   &kp RBKT
+&kp LCTRL      &kp Z   &kp X     &kp C      &kp V      &kp B   &kp BACKSPACE  &kp B   &kp N   &kp M      &kp COMMA  &kp DOT           &kp SEMI   &kp SQT
+                       &kp LALT  &kp SPACE  &kp ENTER                                         &kp ENTER  &kp SPACE  &kp LANG_HANGEUL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
