@@ -20,3 +20,4 @@
         , <&pro_micro 20 GPIO_ACTIVE_HIGH>
         , <&pro_micro 21 GPIO_ACTIVE_HIGH>
         ;
+};
