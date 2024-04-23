@@ -8,7 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 
 / {
     keymap {
@@ -23,11 +22,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&mt ESC GRAVE  &kp N1  &kp N2    &kp N3     &kp N4       &kp N5  &kp N6    &kp N7         &kp N8  &kp N9     &kp N0     &kp MINUS         &kp EQUAL  &kp FSLH
-&kp TAB        &kp Q   &kp E     &kp E      &kp R        &kp T   &mo 1     &mo 2          &kp Y   &kp U      &kp I      &kp O             &kp P      &kp BSLH
-&kp LSHFT      &kp A   &kp S     &kp D      &kp F        &kp G   &kp DEL   &kp BACKSPACE  &kp H   &kp J      &kp K      &kp L             &kp LBKT   &kp RBKT
-&kp LCTRL      &kp Z   &kp X     &kp C      &kp V        &kp B   &kp LWIN  &kp B          &kp N   &kp M      &kp COMMA  &kp DOT           &kp SEMI   &kp SQT
-                       &kp LALT  &kp SPACE  &lt 1 ENTER                                           &kp ENTER  &kp SPACE  &kp LANG_HANGEUL
+&mt ESC GRAVE  &kp N1  &kp N2    &kp N3     &kp N4       &kp N5  &kp N6    &kp N7         &kp N8  &kp N9       &kp N0     &kp MINUS         &kp EQUAL  &kp FSLH
+&kp TAB        &kp Q   &kp W     &kp E      &kp R        &kp T   &mo 1     &mo 2          &kp Y   &kp U        &kp I      &kp O             &kp P      &kp BSLH
+&kp LSHFT      &kp A   &kp S     &kp D      &kp F        &kp G   &kp DEL   &kp BACKSPACE  &kp H   &kp J        &kp K      &kp L             &kp LBKT   &kp RBKT
+&kp LCTRL      &kp Z   &kp X     &kp C      &kp V        &kp B   &kp LWIN  &kp B          &kp N   &kp M        &kp COMMA  &kp DOT           &kp SEMI   &kp SQT
+                       &kp LALT  &kp SPACE  &lt 1 ENTER                                           &lt 2 ENTER  &kp SPACE  &kp LANG_HANGEUL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -35,11 +34,11 @@
 
         layer_1 {
             bindings = <
-&bt BT_CLR_ALL    &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_DISC 0  &trans  &trans  &trans  &trans    &kp PLUS  &kp MINUS  &kp STAR  &kp FSLH
-&kp F1            &kp F2             &kp F3             &kp F4        &kp F5        &kp F6         &trans  &trans  &trans  &trans    &kp DOT   &kp N7     &kp N8    &kp N9
-&kp F7            &kp F8             &kp F9             &kp F10       &kp F11       &kp F12        &trans  &trans  &trans  &trans    &kp N0    &kp N4     &kp N5    &kp N6
-&ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans        &trans        &trans         &trans  &trans  &trans  &trans    &kp UP    &kp N1     &kp N2    &kp N3
-                                     &trans             &trans        &trans                                               &kp LEFT  &kp DOWN  &kp RIGHT
+&bt BT_CLR_ALL  &kp F1        &kp F2            &kp F3             &kp F4             &kp F5  &kp F6  &kp F7           &kp F8        &kp F9        &kp F10   &kp F11    &kp F12  &kp FSLH
+&kp KP_NUMLOCK  &kp INS       &kp HOME          &kp PAGE_DOWN      &trans             &trans  &trans  &kp C_VOLUME_UP  &kp C_VOL_DN  &trans        &kp DOT   &kp N7     &kp N8   &kp N9
+&kp CAPSLOCK    &kp DELETE    &kp END           &kp PAGE_DOWN      &trans             &trans  &trans  &trans           &trans        &trans        &kp N0    &kp N4     &kp N5   &kp N6
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &trans             &trans  &trans  &trans           &trans        &kp UP_ARROW  &none     &kp N1     &kp N2   &kp N3
+                              &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG                                                 &kp LEFT      &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
